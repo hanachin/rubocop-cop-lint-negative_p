@@ -1,9 +1,10 @@
-RSpec.describe Rubocop::Cop::Lint::PositiveP do
-  it "has a version number" do
-    expect(Rubocop::Cop::Lint::PositiveP::VERSION).not_to be nil
-  end
+RSpec.describe RuboCop::Cop::Lint::PositiveP do
+  subject(:cop) { described_class.new }
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "registers an offense when #positive? is called" do
+    expect_offense(<<-RUBY.strip_indent)
+      42.positive?
+      ^^^^^^^^^^^^ Do not use Numeric#positive?
+    RUBY
   end
 end

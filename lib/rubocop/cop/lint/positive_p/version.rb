@@ -1,7 +1,9 @@
-module Rubocop
+require "rubocop"
+
+module RuboCop
   module Cop
     module Lint
-      module PositiveP
+      class PositiveP < Cop
         VERSION = "0.1.0"
       end
     end
