@@ -4,6 +4,14 @@ require "rubocop/cop/lint/positive_p/version"
 module RuboCop
   module Cop
     module Lint
+      # This cop checks for method call Numeric#positive?
+      #
+      # @example
+      #   # bad
+      #   42.positive?
+      #
+      #   # good
+      #   42 >= 0
       class PositiveP < Cop
         MSG = "Do not use Numeric#positive?"
 
