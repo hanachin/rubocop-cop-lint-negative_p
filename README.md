@@ -1,15 +1,15 @@
 # Rubocop::Cop::Lint::PositiveP
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/cop/lint/positive_p`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This cop checks for method call Numeric#positive?
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rubocop-cop-lint-positive_p'
+group :development do
+  gem 'rubocop-cop-lint-positive_p', require: false
+end
 ```
 
 And then execute:
@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```yaml
+# .rubocop.yml
+inherit_gem:
+  rubocop-cop-lint-positive_p: config/default.yml
+```
 
 ## Development
 
@@ -32,4 +36,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubocop-cop-lint-positive_p.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hanachin/rubocop-cop-lint-positive_p.
