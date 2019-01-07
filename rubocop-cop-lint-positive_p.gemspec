@@ -5,7 +5,7 @@ require "rubocop/cop/lint/negative_p/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-cop-lint-negative_p"
-  spec.version       = RuboCop::Cop::Lint::PositiveP::VERSION
+  spec.version       = RuboCop::Cop::Lint::NegativeP::VERSION
   spec.authors       = ["Seiei Miyagi"]
   spec.email         = ["hanachin@gmail.com"]
 

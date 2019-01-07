@@ -1,4 +1,4 @@
-RSpec.describe RuboCop::Cop::Lint::PositiveP, :config do
+RSpec.describe RuboCop::Cop::Lint::NegativeP, :config do
   subject(:cop) { described_class.new(config) }
 
   context "TargetRubyVersion >= 2.3", :ruby23 do

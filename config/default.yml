@@ -1,6 +1,6 @@
 require: rubocop/cop/lint/negative_p
 
-Lint/PositiveP:
+Lint/NegativeP:
   Description: Checks for method call Numeric#negative?
   Enabled: true
   Severity: error

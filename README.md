@@ -1,4 +1,4 @@
-# RuboCop::Cop::Lint::PositiveP
+# RuboCop::Cop::Lint::NegativeP
 
 This cop checks for method call Numeric#negative?
 

@@ -12,7 +12,7 @@ module RuboCop
       #
       #   # good
       #   42 >= 0
-      class PositiveP < Cop
+      class NegativeP < Cop
         MSG = "Do not use Numeric#negative?"
 
         def_node_matcher :negative?, <<-PATTERN
