@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "rubocop/cop/lint/positive_p/version"
+require "rubocop/cop/lint/negative_p/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "rubocop-cop-lint-positive_p"
+  spec.name          = "rubocop-cop-lint-negative_p"
   spec.version       = RuboCop::Cop::Lint::PositiveP::VERSION
   spec.authors       = ["Seiei Miyagi"]
   spec.email         = ["hanachin@gmail.com"]
 
-  spec.summary       = %q{This cop checks for method call Numeric#positive?}
-  spec.homepage      = "https://github.com/hanachin/rubocop-cop-lint-positive_p"
+  spec.summary       = %q{This cop checks for method call Numeric#negative?}
+  spec.homepage      = "https://github.com/hanachin/rubocop-cop-lint-negative_p"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

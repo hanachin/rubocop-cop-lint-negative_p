@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "rubocop/cop/lint/positive_p"
+require "rubocop/cop/lint/negative_p"
 require "rubocop/rspec/support"
 
 RSpec.configure do |config|

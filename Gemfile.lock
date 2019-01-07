@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-cop-lint-positive_p (0.1.0)
+    rubocop-cop-lint-negative_p (0.1.0)
       rubocop
 
 GEM
@@ -47,7 +47,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   rake (~> 10.0)
   rspec
-  rubocop-cop-lint-positive_p!
+  rubocop-cop-lint-negative_p!
 
 BUNDLED WITH
    2.0.1

@@ -1,6 +1,6 @@
 # RuboCop::Cop::Lint::PositiveP
 
-This cop checks for method call Numeric#positive?
+This cop checks for method call Numeric#negative?
 
 ## Installation
 
@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :development do
-  gem 'rubocop-cop-lint-positive_p', require: false
+  gem 'rubocop-cop-lint-negative_p', require: false
 end
 ```
 
@@ -18,14 +18,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rubocop-cop-lint-positive_p
+    $ gem install rubocop-cop-lint-negative_p
 
 ## Usage
 
 ```yaml
 # .rubocop.yml
 inherit_gem:
-  rubocop-cop-lint-positive_p: config/default.yml
+  rubocop-cop-lint-negative_p: config/default.yml
 ```
 
 ## Development
@@ -36,4 +36,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/hanachin/rubocop-cop-lint-positive_p.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hanachin/rubocop-cop-lint-negative_p.
