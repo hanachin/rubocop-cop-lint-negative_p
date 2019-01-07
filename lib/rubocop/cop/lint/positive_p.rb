@@ -11,6 +11,10 @@ module RuboCop
           (send _ :positive?)
         PATTERN
 
+        def self.support_target_ruby_version?(version)
+          version < 2.3
+        end
+
         def on_send(node)
           return unless positive?(node)
 
